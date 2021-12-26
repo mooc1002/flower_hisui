@@ -1,0 +1,196 @@
+@media screen and(max-width:768px) {
+    @import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Imperial Script", cursive;
+        background-color: #FDE7D9;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        & .slide-menu {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            z-index: 99;
+            margin-top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 80vh;
+            background-color: rgba($color: white, $alpha: 0.9);
+            transition: all 0.7s;
+
+            &.active {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 1;
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                padding-left: 0;
+
+                & li {
+                    font-size: 40px;
+                    margin: 40px auto;
+                    text-align: center;
+                    list-style: none;
+
+                    & span {
+                        display: block;
+                        font-size: 15px;
+                        width: 110px;
+                        text-align: center;
+                        border-bottom: 1px solid;
+                    }
+                }
+            }
+        }
+
+        &__top {
+            display: flex;
+
+            & h1 {
+                width: 50px;
+                margin-left: 20px;
+
+                & img {
+                    width: 100%;
+                    mix-blend-mode: multiply;
+                }
+            }
+
+            & nav {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                display: block;
+                z-index: 100;
+
+                & .bar {
+                    position: absolute;
+                    top: -10px;
+                    right: 10px;
+                    display: block;
+                    width: 30px;
+                    height: 5px;
+                    background-color: black;
+                    transition: all 0.6s;
+
+                    &:nth-child(1) {
+                        top: 0px;
+                        right: 10px;
+                    }
+                    &:nth-child(2) {
+                        top: 10px;
+                    }
+                    &:nth-child(3) {
+                        top: 20px;
+                    }
+
+                    &.active {
+                        &:nth-child(1) {
+                            top: 0;
+                            transform: rotate(45deg);
+                        }
+                        &:nth-child(2) {
+                            opacity: 0;
+                            transform: scale(0);
+                        }
+                        &:nth-child(3) {
+                            top: 0;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .news {
+        & h2 {
+            margin-left: 20px;
+            border-bottom: 1px solid;
+            max-width: 50%;
+        }
+
+        &__detail {
+            margin-top: 30px;
+            margin-left: 20px;
+
+            & dl {
+                margin-bottom: 10px;
+                border-bottom: 1px solid;
+                max-width: 80%;
+            }
+        }
+    }
+
+    .faq {
+        margin: 120px auto;
+
+        & h3 {
+            margin-left: 20px;
+        }
+
+        &__list {
+            max-width: 90%;
+
+            & ul {
+                margin-top: 20px;
+                margin-left: 20px;
+
+                & .big {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    min-height: 50px;
+                    list-style: none;
+
+                    & .small {
+                        opacity: 0;
+                        width: 100%;
+                        transform: translateY(-20px);
+                        text-align: center;
+                        transition: all .7s;
+
+                        &.click {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 85px;
+        font-size: 48px;
+        text-align: center;
+        color: white;
+        background-color: #574f4f;
+    }
+}
