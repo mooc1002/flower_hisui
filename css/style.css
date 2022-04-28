@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+@media screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .header {
+    width: 100%;
+    height: 230px;
+    background-image: url(../images/flowers.jpg);
+    background-size: cover;
+    background-color: skyblue;
+    background-blend-mode: hard-light;
+    font-family: "Imperial Script", cursive;
+  }
+  .header .slide-menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    margin-top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .header .slide-menu.active {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+  }
+  .header .slide-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .header .slide-menu ul li {
+    font-size: 40px;
+    margin: 40px auto;
+    text-align: center;
+    list-style: none;
+  }
+  .header .slide-menu ul li span {
+    display: block;
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+  }
+  .header__top h1 {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  .header__top h1 img {
+    width: 70px;
+    mix-blend-mode: multiply;
+  }
+  .header__top nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: block;
+    z-index: 100;
+  }
+  .header__top nav .bar {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .header__top nav .bar:nth-child(1) {
+    top: -10px;
+    right: 10px;
+  }
+  .header__top nav .bar:nth-child(2) {
+    top: 0px;
+  }
+  .header__top nav .bar:nth-child(3) {
+    top: 10px;
+  }
+  .header__top nav .bar.active:nth-child(1) {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__top nav .bar.active:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__top nav .bar.active:nth-child(3) {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header__phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 150px;
+  }
+  .header__phrase h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: "Imperial Script", cursive;
+  }
+  .about {
+    width: 100%;
+    height: 500px;
+  }
+  .about .title {
+    font-size: 50px;
+    font-family: "Imperial Script", cursive;
+  }
+  .about__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+  }
+  .about__block__left {
+    width: 50%;
+    position: relative;
+  }
+  .about__block__left .flower1 {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: -20px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .about__block__left .flower2 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: -20px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .about__block__left img {
+    width: 100%;
+  }
+  .about__block__right {
+    width: 50%;
+    position: relative;
+  }
+  .about__block__right p {
+    z-index: 5;
+    height: 60%;
+    margin: 30px auto 0 auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .about__block__right p.p1 {
+    text-align: left;
+    margin-right: -20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .about__block__right p.p2 {
+    margin-left: -20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .about__block:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about h3 {
+    text-align: center;
+  }
+  .charm {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .charm h4 {
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+  }
+  .charm__box__tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .charm__box__tiles img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .charm__box__tiles p {
+    margin: 10px auto;
+    border-bottom: 2px solid;
+    white-space: nowrap;
+    text-align: center;
+    width: 80%;
+  }
+  .review {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: scroll;
+    background-color: white;
+  }
+  .review h5 {
+    font-size: 30px;
+    text-align: center;
+    color: #9a6060;
+  }
+  .review__detail {
+    padding-bottom: 30px;
+  }
+  .review__detail dl {
+    color: #9a6060;
+  }
+  .review__detail dl dt {
+    margin-left: 20px;
+  }
+  .review__detail dl dd {
+    margin-left: 20px;
+  }
+  .text {
+    margin-bottom: 50px;
+  }
+  .text h6 {
+    font-size: 50px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+  }
+  .text p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+  }
+  footer {
+    width: 100%;
+    height: 85px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background-color: #574f4f;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/flowers.jpg);
+    background-size: cover;
+  }
+  .header .slide-menu {
+    display: none;
+  }
+  .header__top h1 {
+    margin: 0;
+  }
+  .header__top h1 img {
+    width: 50px;
+  }
+  .header__top nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: block;
+    z-index: 100;
+  }
+  .header__top nav .bar {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .header__top nav .bar:nth-child(1) {
+    top: -10px;
+    right: 10px;
+  }
+  .header__top nav .bar:nth-child(2) {
+    top: 0px;
+  }
+  .header__top nav .bar:nth-child(3) {
+    top: 10px;
+  }
+  .header__top nav .bar.active:nth-child(1) {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__top nav .bar.active:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__top nav .bar.active:nth-child(3) {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header__phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
+  }
+  .header__phrase h2 {
+    font-size: 50px;
+  }
+}
+
+body {
+  margin: 0;
+  background-image: url(../images/bell.jpg);
+  background-size: cover;
+  background-color: orange;
+  background-blend-mode: hard-light;
+  font-family: "Imperial Script", cursive;
+}
+/*# sourceMappingURL=style.css.map */

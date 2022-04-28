@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Imperial Script", cursive;
+    background-color: #FDE7D9;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .slide-menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    margin-top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .header .slide-menu.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  .header .slide-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .header .slide-menu ul li {
+    font-size: 40px;
+    margin: 40px auto;
+    text-align: center;
+    list-style: none;
+  }
+  .header .slide-menu ul li span {
+    display: block;
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__top h1 {
+    width: 50px;
+    margin-left: 20px;
+  }
+  .header__top h1 img {
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+  .header__top nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    z-index: 100;
+  }
+  .header__top nav .bar {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .header__top nav .bar:nth-child(1) {
+    top: 0px;
+    right: 10px;
+  }
+  .header__top nav .bar:nth-child(2) {
+    top: 10px;
+  }
+  .header__top nav .bar:nth-child(3) {
+    top: 20px;
+  }
+  .header__top nav .bar.active:nth-child(1) {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__top nav .bar.active:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__top nav .bar.active:nth-child(3) {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .news h2 {
+    margin-left: 20px;
+    border-bottom: 1px solid;
+    max-width: 50%;
+  }
+  .news__detail {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .news__detail dl {
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    max-width: 80%;
+  }
+  .faq {
+    margin: 120px auto;
+  }
+  .faq h3 {
+    margin-left: 20px;
+  }
+  .faq__list {
+    max-width: 90%;
+  }
+  .faq__list ul {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .faq__list ul .big {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+    min-height: 50px;
+    list-style: none;
+  }
+  .faq__list ul .big .small {
+    opacity: 0;
+    width: 100%;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    text-align: center;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+  }
+  .faq__list ul .big .small.click {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  footer {
+    width: 100%;
+    height: 85px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background-color: #574f4f;
+  }
+}
+/*# sourceMappingURL=news.css.map */

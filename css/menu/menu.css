@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+@media screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  body {
+    margin: 0;
+    background-color: #FDE7D9;
+    background-size: cover;
+    font-family: "Imperial Script", cursive;
+    background-color: #FDE7D9;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .slide-menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    margin-top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .header .slide-menu.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  .header .slide-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .header .slide-menu ul li {
+    font-size: 40px;
+    margin: 40px auto;
+    text-align: center;
+    list-style: none;
+  }
+  .header .slide-menu ul li span {
+    display: block;
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__top h1 {
+    width: 50px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .header__top h1 img {
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+  .header__top nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    z-index: 100;
+  }
+  .header__top nav .bar {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .header__top nav .bar:nth-child(1) {
+    top: 0px;
+    right: 10px;
+  }
+  .header__top nav .bar:nth-child(2) {
+    top: 10px;
+  }
+  .header__top nav .bar:nth-child(3) {
+    top: 20px;
+  }
+  .header__top nav .bar.active:nth-child(1) {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__top nav .bar.active:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__top nav .bar.active:nth-child(3) {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .rose h1 {
+    max-width: 80%;
+    margin-top: 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .rose__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rose__box__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .rose__box__item p {
+    width: 90%;
+  }
+  .rose__box__item .itm-intro {
+    margin-top: 10px;
+  }
+  .rose__box__item .itm-name {
+    margin-left: 10px;
+  }
+  .rose__box__item img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .camelia {
+    margin: 50px auto;
+  }
+  .camelia h1 {
+    max-width: 80%;
+    margin-top: 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .camelia__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .camelia__box__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .camelia__box__item p {
+    width: 90%;
+  }
+  .camelia__box__item .itm-intro {
+    margin-top: 10px;
+  }
+  .camelia__box__item .itm-name {
+    margin-left: 10px;
+  }
+  .camelia__box__item img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .dandelion {
+    margin: 50px auto;
+  }
+  .dandelion h1 {
+    max-width: 80%;
+    margin-top: 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .dandelion__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dandelion__box__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .dandelion__box__item p {
+    width: 90%;
+  }
+  .dandelion__box__item .itm-intro {
+    margin-top: 10px;
+  }
+  .dandelion__box__item .itm-name {
+    margin-left: 10px;
+  }
+  .dandelion__box__item img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer {
+    width: 100%;
+    height: 85px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background-color: #574f4f;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
